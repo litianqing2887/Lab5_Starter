@@ -3,6 +3,6 @@ Frank Li
 
 [introduction-to-github](https://github.com/litianqing2887/introduction-to-github)
 
-[expose](https://github.com/litianqing2887/Lab5_Starter/blob/master/expose.html)
+[expose](https://litianqing2887.github.io/Lab5_Starter/expose.html)
 
-[explore](https://github.com/litianqing2887/Lab5_Starter/blob/master/explore.html)
+[explore](https://litianqing2887.github.io/Lab5_Starter/explore.html)
