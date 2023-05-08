@@ -35,7 +35,7 @@ function init() {
   }
 
   button.addEventListener("click", (event) => {
-    image.src = "images/smiling-open.png";
+    image.src = "assets/images/smiling-open.png";
     const utterThis = new SpeechSynthesisUtterance(input.value);
     const selectedOption =
       voiceSelect.selectedOptions[0].getAttribute("data-name");
@@ -45,7 +45,7 @@ function init() {
       }
     }
     utterThis.addEventListener("end", (event) => {
-      image.src = "images/smiling.png";
+      image.src = "assets/images/smiling.png";
     });
     synth.speak(utterThis);
   });
