@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', init);
 function init() {
   // TODO
   const synth = window.speechSynthesis;
+  const image = document.querySelector("img");
   const voiceSelect = document.querySelector("select");
   const input = document.querySelector("textarea");
   const button = document.querySelector("button");
@@ -34,6 +35,7 @@ function init() {
   }
 
   button.addEventListener("click", (event) => {
+    image.src = "images/smiling-open.png";
     const utterThis = new SpeechSynthesisUtterance(input.value);
     const selectedOption =
       voiceSelect.selectedOptions[0].getAttribute("data-name");
@@ -42,6 +44,9 @@ function init() {
         utterThis.voice = voices[i];
       }
     }
+    utterThis.addEventListener("end", (event) => {
+      image.src = "images/smiling.png";
+    });
     synth.speak(utterThis);
   });
 }
